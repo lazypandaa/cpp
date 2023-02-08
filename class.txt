@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+class student
+{
+    public: int ID; 
+    public: char Name[10];
+    public:void display()
+    {
+        cout<<"Enter ID: ";
+        cin>>ID;
+        cout<<"Enter Name: ";
+        cin>>Name;
+        cout<<"yout are : "<<ID<<" "<<Name;
+    }
+};
+int main()
+{
+    student one;
+    one.display();
+    return 0;
+}

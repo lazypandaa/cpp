@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+class fact
+{
+    public: int n,fact=1,count=0 
+    public:void factt()
+    {
+        cin>>n;
+   if(n<0)
+    return 1;
+    else
+    {
+       factt=factt(n-1);
+    } 
+    }
+    cout<<"fact is :"<<fact;
+};
+int main()
+{
+    fact one;
+    one.factt();
+    return 0;
+}

@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+void fun()
+{
+    static int num=1;
+    cout<<"Value if num: "<<num<<endl;
+    num++;
+}
+int main()
+{
+    fun();
+    fun();
+    fun();
+    return 0;
+}

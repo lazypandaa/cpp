@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int n,fact=1,count=0; 
+        cout<<"Enter : ";
+        cin>>n;
+        if(n<0)
+            cout<<"Fact not exist";
+        else
+        {
+            for(int i=1;n>=i;i++)
+            {
+                if(i%2==0)
+                    count++;
+            }
+        if(count==2)
+            cout<<"Prime";
+        else
+            cout<<"Not Prime";
+        }
+    return 0;
+}

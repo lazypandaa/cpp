@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int *a =new int;
+    int *b =new int;
+    int *sum =new int;
+    int *sub =new int;
+    int *mul =new int;
+    int *divv =new int;
+    cout<<"Enter two values: ";
+    cin>>*a>>*b;
+    *sum=*a + *b;
+    *sub=*a - *b;
+    *mul=*a * *b;
+    *divv=*a / *b;
+    cout<<"Addition: "<<*sum<<endl;
+    cout<<"Subtraction: "<<*sub<<endl;
+    cout<<"Multiplication: "<<*mul<<endl;
+    cout<<"Division: "<<*divv;
+    delete a;
+    delete b;
+    delete sum;
+    delete sub;
+    delete mul;
+    delete divv;
+    return 0;
+}

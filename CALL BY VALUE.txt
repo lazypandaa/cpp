@@ -1,0 +1,37 @@
+#include <iostream>
+using namespace std;
+
+class abc
+{
+private:int x, y;
+public:void getdata()
+	{
+	cout<<"Enter 1st no: ";
+	cin>>x;
+	cout<<"Enter 2nd no: ";
+	cin>>y;
+	}
+};
+void add(abc ob1, abc ob2)
+{
+x=ob1.x+ob2.x;
+x=ob1.y+ob2.y;
+}
+void show()
+{
+cout<<"\nx="<<x;
+cout<<"\ny="<<y;
+}
+void main()
+{
+abc ob1,ob2,ob3;
+ob1.getdata();
+ob2.getdata();
+cout<<"ob1=";
+ob1.show();
+cout<<"ob2=";
+ob2.show();
+ob3.add(ob1,ob2);
+cout<<"\nob3"<<ob3;
+ob3.show()
+}

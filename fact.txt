@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int n,fact=1,count=0; 
+    cout<<"Enter : ";
+    cin>>n;
+    if(n<0)
+        cout<<"Fact not exist";
+    else
+    {
+        for(int i=1;n>=i;i++)
+            fact *=i;
+        cout<<"fact is :"<<fact;
+    }
+    return 0;
+}

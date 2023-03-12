@@ -50,11 +50,11 @@ int main()
     cin>>ch;
     cout<<"Credit amount: ";
     cin>>x;
-    if(ch=1){
+    if(ch==1){
         a[i].credit(x);
         a[i].display(); 
     }
-    else if(ch=2){
+    else if(ch==2){
         a[i].debit(x);
         a[i].display(); 
     }
